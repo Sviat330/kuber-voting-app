@@ -7,10 +7,13 @@ metadata:
     stack: voting-app
 spec:
   containers:
-    - name: db
-      image: postgres
+    - name: postgres
+      image: postgres:15-alpine
       env:
-        - name: POSTGRES_USER
-          value: postgres
-        - name: POSTGRES_PASSWORD
-          value: postgres
+      - name: POSTGRES_USER
+        value: postgres
+      - name: POSTGRES_PASSWORD
+        value: postgres
+      ports:
+      - containerPort: 5432
+          name: postgres
