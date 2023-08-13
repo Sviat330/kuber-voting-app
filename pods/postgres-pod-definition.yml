@@ -9,6 +9,8 @@ spec:
   containers:
     - name: db
       image: postgres
+      ports:
+        - containerPort: 5432
       env:
         - name: POSTGRES_USER
           value: postgres
