@@ -4,3 +4,6 @@
 [submodule "result"]
 	path = result
 	url = https://github.com/Sviat330/result.git
+[submodule "worker"]
+	path = worker
+	url = https://github.com/Sviat330/worker.git
