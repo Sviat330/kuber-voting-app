@@ -1,0 +1,3 @@
+[submodule "vote"]
+	path = vote
+	url = https://github.com/Sviat330/vote.git
